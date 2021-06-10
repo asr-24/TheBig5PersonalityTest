@@ -1,5 +1,5 @@
 body{
-  font-family: 'Lora', serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   max-width: 100%;
   overflow-x: hidden;
@@ -156,8 +156,8 @@ li .formattedText{
 
 .spcNote{
   color: #28cb95;
-
 }
+
 .readMore:hover{
   text-decoration: none;
   color: #cbc028;
@@ -179,7 +179,7 @@ button:focus{
 }
 
 .landingPageDiv{
-  margin-top: 2%;
+  margin-top: 1%;
   margin-left: 2%;
 }
 
@@ -191,14 +191,113 @@ button:focus{
   margin-top: 5%;
   text-align: center;
 }
+.statement{
+  border-top: solid 2px #caf7e3;
+  border-bottom: solid 3px #f6efa6 ;
+}
 .qsStatement h3{
   border: none;
   color: #df5e88;
 }
 .options{
   text-align: left;
-  margin-left: 45%;
+  margin-left: 40%;
   margin-top: 2%;
+
+}
+.options label{
+  font-size: 1rem;
+  color: #A6ADF6;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.optionsSub{
+  float: left;
+}
+.ButtonRight{
+  float: right;
+  position: relative;
+  right: 25rem;
+  top: 2rem;
+}
+.nextQs{
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  font-size: 4rem;
+  color: pink;
+}
+.nextQs:hover{
+  color: #e4bad4;
+}
+
+.whatYouAreDiv{
+  width: 70%;
+}
+.done{
+  text-align: center;
+  color: #A6ADF6;
+  font-weight: bold;
+}
+.emoji{
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: right;
+}
+.scoresIntro{
+  text-align: center;
+}
+.trait{
+  margin-left: 5%;
+  color: #df5e88;
+  font-weight: bold;
+  border: none;
+}
+.dot{
+  font-size: 1.5rem;
+}
+.mainContent{
+  margin-left: 10%;
+}
+.yourScore{
+  color: #5edfb5;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.whatYouAreDiv{
+  border: solid 2px #A6ADF6;
+  padding: 2.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+.traitsB {
+  list-style: none;
+  margin-left: -2rem;
+
+}
+
+.traitsB li::before {
+  content: "\2713";
+  color: gold;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  margin-right: 0.6rem;
+}
+.disclaimer{
+  width: 80%;
+  margin-bottom: 5rem;
+}
+.disclaimer p{
+  margin-left: 10%;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    padding: 5px;
 }
 .footer{
   background-color: #caf7e3;

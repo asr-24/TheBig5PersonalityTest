@@ -1,0 +1,130 @@
+<%- include("partials//header") -%>
+
+<h1 class="done"> <span class="emoji">✨</span> Done - Congratulations! <span class="emoji">✨</span> </h1>
+
+
+<h4 class="scoresIntro">You answered <span class="done"><%= theseMany %>/50</span>
+   questions and here's what we have for you - </h4>
+
+
+<h3 class=trait> <span class="dot">&#10687;	</span>Openness</h3>
+<div class="mainContent">
+  <h6 class="yourScore">YOU - <%= one %>%</h6>
+  <p class="avgScore">Average - 58%</p>
+  <p class="whatDoesItMean">Openness describes an individual’s tendency to think in complex, abstract ways. <br>
+  People who are high in Openness are abstract thinkers, <br>while people who are low in Openness are concrete thinkers.</p>
+  <div class="whatYouAreDiv">
+    <p class="whatYouAre"><%- openness %></p>
+    <ul class="traitsB">
+      <% for (var i = 0; i<oA.length; i++){ %>
+        <li class="trait"><%= oA[i] %></li>
+      <% } %>
+    </ul>
+  </div>
+</div>
+
+
+
+<h3 class=trait> <span class="dot">&#10687;	</span>Conscientiousness</h3>
+<div class="mainContent">
+  <h6 class="yourScore">YOU - <%= two %>%</h6>
+  <p class="avgScore">Average - 55%</p>
+  <p class="whatDoesItMean">Conscientiousness describes a person’s tendency to be persistent and determined in achieving their goals. <br>
+People who are high in Conscientiousness tend to work hard to put their plans into action, <br>
+while people who are low in this trait tend to change course and get distracted easily.</p>
+  <div class="whatYouAreDiv">
+    <p class="whatYouAre"><%- conscientiousness %></p>
+    <ul class="traitsB">
+      <% for (var i = 0; i<cA.length; i++){ %>
+        <li class="trait"><%= cA[i] %></li>
+      <% } %>
+    </ul>
+  </div>
+</div>
+
+
+
+<h3 class=trait> <span class="dot">&#10687;	</span>Extraversion</h3>
+<div class="mainContent">
+  <h6 class="yourScore">YOU - <%= three %>%</h6>
+  <p class="avgScore">Average - 51%</p>
+  <p class="whatDoesItMean">Extraversion describes a person’s tendency to be energized by being around other people versus being by oneself. <br>
+Extraverts are energized by socializing with others, <br>
+while Introverts (people low in Extraversion) are energized by spending time alone.</p>
+  <div class="whatYouAreDiv">
+    <p class="whatYouAre"><%- extraversion %></p>
+    <ul class="traitsB">
+      <% for (var i = 0; i<eA.length; i++){ %>
+        <li class="trait"><%= eA[i] %></li>
+      <% } %>
+    </ul>
+  </div>
+</div>
+
+<h3 class=trait> <span class="dot">&#10687;	</span>Agreeableness</h3>
+<div class="mainContent">
+  <h6 class="yourScore">YOU - <%= four %>%</h6>
+  <p class="avgScore">Average - 63%</p>
+  <p class="whatDoesItMean">Agreeableness describes an individual’s tendency to put the needs of others ahead of their own needs. <br>
+Highly Agreeable people are mostly concerned with getting along with others. <br>
+People low in Agreeableness are mostly concerned with serving their own interests.</p>
+  <div class="whatYouAreDiv">
+    <p class="whatYouAre"><%- agreeableness %></p>
+    <ul class="traitsB">
+      <% for (var i = 0; i<aA.length; i++){ %>
+        <li class="trait"><%= aA[i] %></li>
+      <% } %>
+    </ul>
+  </div>
+</div>
+
+
+<h3 class=trait> <span class="dot">&#10687;	</span>Neuroticism</h3>
+<div class="mainContent">
+  <h6 class="yourScore">YOU - <%= five %>%</h6>
+  <p class="avgScore">Average - 54%</p>
+  <p class="whatDoesItMean">Neuroticism describes an individual’s response to stress. <br>
+Highly Neurotic people are susceptible to anxiety, depression, anger, and other negative emotions when subjected to stressful conditions. <br>
+People low in Neuroticism resist stress and tend not to experience many negative emotions.</p>
+  <div class="whatYouAreDiv">
+    <p class="whatYouAre"><%- neuroticism %></p>
+    <ul class="traitsB">
+      <% for (var i = 0; i<nA.length; i++){ %>
+        <li class="trait"><%= nA[i] %></li>
+      <% } %>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="disclaimer">
+  <h3 class="trait">Keep in mind...</h3>
+  <p>When looking at your results, remember that personality is incredibly complex.
+    There are no right or wrong traits, and each trait is linked to unique strengths.
+    These results also aren’t any kind of definitive statement about your personality.
+    They may even change based on a range of factors, from your mood that day to whether you’ve got an important, nerve-wracking event coming up in the near future.</p>
+
+    <p>Personality tests can sometimes help you understand yourself better.
+      But they can’t completely define who you are as a person.
+      A test won’t fully describe you, even if it gets some things right.
+
+  If you’d like to work on a specific feeling or behavior,
+  or if you think one of your traits might have a negative effect on your relationships,
+  you can always seek help from a counselor or therapist.
+
+  A counselor can help you uncover more about your personality and
+  explore ways to achieve any changes you’d like to make.</p>
+
+
+</div>
+
+
+
+
+<%- include("partials//footer") -%>
